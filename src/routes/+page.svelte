@@ -8,7 +8,7 @@
 
   onMount(async () => {
     try {
-      const response = await fetch('http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/auth/session/api/auth/session', {
+      const response = await fetch('https://tikitika.dev/api/auth/session', {
         method: 'GET',
         credentials: 'include', // Include cookies in the request
       });
