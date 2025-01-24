@@ -8,7 +8,7 @@
 
   onMount(async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/session', {
+      const response = await fetch('http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/auth/session/api/auth/session', {
         method: 'GET',
         credentials: 'include', // Include cookies in the request
       });
