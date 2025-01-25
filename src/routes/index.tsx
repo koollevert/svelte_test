@@ -25,12 +25,29 @@
 // };
 import { component$ } from '@builder.io/qwik';
 import { UserComponent } from '../components/user';
+import { Avatar, AvatarFallback, AvatarImage } from '~/components/avatar';
+
 
 export default component$(() => {
   return (
     <div>
       <h1>Welcome to Qwik</h1>
       <UserComponent />
+      <Avatar>
+        <AvatarImage src="https://via.placeholder.com/40" alt="User Avatar" />
+        <AvatarFallback fallback="JD" />
+      </Avatar>
+
+      <Avatar className="bg-gray-200">
+        <AvatarFallback fallback="AB" />
+      </Avatar>
     </div>
   );
 });
+
+// export default component$(() => {
+//   return (
+//     <div class="flex space-x-4">
+//     </div>
+//   );
+// });
