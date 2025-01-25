@@ -41,3 +41,6 @@ export const UserComponent = component$(() => {
     </main>
   );
 });
+
+
+//just a component
